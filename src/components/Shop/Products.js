@@ -1,0 +1,42 @@
+import ProductItem from "./ProductItem";
+import classes from "./Products.module.css";
+const DUMMY_PRODUCTS = [
+  {
+    id: "p1",
+    price: 6,
+    title: "My First Product",
+    description: "Each time when product will be added notification will show the status like sending, success, or any error  ",
+  },
+  {
+    id: "p2",
+    price: 14,
+    title: "My Second Product",
+    description: "Firebase is connected with this Application ",
+  },
+  {
+    id: "p3",
+    price: 8,
+    title: "My Third Product",
+    description: "Redux toolkit is used  while building this application ",
+  }
+];
+const Products = (props) => {
+  return (
+    <section className={classes.products}>
+      <h2>Buy your favorite products</h2>
+      <ul>
+        {DUMMY_PRODUCTS.map(product =>
+          <ProductItem
+          key={product.id}
+          id={product.id}
+          title={product.title}
+          price={product.price}
+          description={product.description}
+        /> )}
+        
+      </ul>
+    </section>
+  );
+};
+
+export default Products;
