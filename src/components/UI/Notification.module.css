@@ -7,6 +7,7 @@
     padding: 0.5rem 10%;
     align-items: center;
     color: white;
+    overflow: hidden;
   }
   
   .notification h2,
@@ -22,4 +23,38 @@
   .success {
     background-color: #78eddd;
     color: rgb(11, 65, 65);
+  }
+  @media only screen and (max-width:768px) {
+
+    .notification{
+      justify-content: unset;
+      padding: auto;
+      align-items: center;
+      text-align: center;
+      padding-left: 0px;
+    }
+    .notification h2,
+  .notification p {
+    font-size: 0.67rem;
+   margin: auto;
+  
+    
+  }
+  
+  }
+  @media only screen and (max-width:450px) {
+
+    .notification{
+      justify-content: unset;
+      padding: auto;
+      align-items: center;
+      text-align: center;
+      padding-left: 10px;
+    }
+    .notification h2,
+  .notification p {
+    font-size: 0.67rem;
+    margin-right: 24%;
+  }
+  
   }

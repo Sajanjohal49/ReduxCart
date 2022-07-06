@@ -2,6 +2,8 @@
   background-color: transparent;
   border-color: #1ad1b9;
   color: #1ad1b9;
+  border-radius: 20px;
+
 }
 
 .button:hover,
@@ -19,3 +21,38 @@
   padding: 0.15rem 1.25rem;
   color: #1d1d1d;
 }
+@media only screen and (max-width:768px) {
+  .button{
+    margin-left: 225px;
+   
+   font-size:12px;
+   padding: 7px;
+    align-items: flex-end;
+  }
+   .badge {
+  background-color: #1ad1b9;
+  border-radius: 30px;
+  padding: 0.15rem 0.65rem;
+  color: #1d1d1d;
+}
+.button span {
+  margin: 0 0.1rem;
+}
+ }
+ @media only screen and (max-width:608px) {
+  .button{
+    margin-left: 105px;
+   
+   font-size:12px;
+   padding: 7px;
+    align-items: flex-end;
+  }}
+ @media only screen and (max-width:450px) {
+  .button{
+    margin-left: 175px;
+   
+   font-size:12px;
+   padding: 7px;
+    align-items: flex-end;
+  }
+ }

@@ -2,6 +2,7 @@
   max-width: 30rem;
   background-color: #313131;
   color: white;
+  
 }
 
 .cart h2 {
@@ -13,4 +14,29 @@
   list-style: none;
   padding: 0;
   margin: 0;
+}
+@media only screen and (max-width:768px) {
+  .cart{
+   align-items: center;
+    overflow: hidden;
+    margin: 20px auto;
+    max-width: 30rem;
+  }
+  .cart h2 {
+    font-size: 0.95rem;
+    margin: 0.2rem 0;
+  }
+}
+@media only screen and (max-width:450px) {
+  .cart{
+   
+    overflow: hidden;
+    margin: 20px auto;
+    max-width: 23rem;
+    align-items: center;
+  }
+  .cart h2 {
+    font-size: 0.95rem;
+    margin: 0.2rem 0;
+  }
 }

@@ -2,6 +2,7 @@
   margin: 1rem 0;
   background-color: #575757;
   padding: 1rem;
+  
 }
 
 .item h3 {
@@ -55,4 +56,30 @@
 .actions button:active {
   background-color: #4b4b4b;
   color: white;
+}
+@media only screen and (max-width:768px) {
+  .item h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.95rem;
+  }
+  .quantity span {
+    font-size: 0.85rem;
+   
+  }
+  .itemprice {
+    
+    font-size: 0.55rem;
+    
+  }
+  .price {
+    font-size: 0.99rem;
+    
+  }
+  .actions button {
+    background-color: transparent;
+    border: 1px solid white;
+    margin-left: 0.5rem;
+    padding: 0.05rem 0.60rem;
+    color: white;
+  }
 }

@@ -1,5 +1,6 @@
 import { Fragment, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import styled from "styled-components";
 import Cart from "./components/Cart/Cart";
 import Layout from "./components/Layout/Layout";
 import Products from "./components/Shop/Products";
@@ -33,7 +34,8 @@ function App() {
   }, [cart, dispatch]);
 
   return (
-    <Fragment>
+    <Wrapper>
+
       {notification && (
         <Notification
           status={notification.status}
@@ -45,8 +47,12 @@ function App() {
         {isCart && <Cart />}
         <Products />
       </Layout>
-    </Fragment>
+    </Wrapper>
   );
 }
 
 export default App;
+const Wrapper=styled.div`
+overflow: auto;
+
+`
