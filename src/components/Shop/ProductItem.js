@@ -69,14 +69,12 @@ const OneSection = styled.div`
 const H1 = styled.div`
   /* @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
   width: 700px; */
-  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-font-family: 'Anton', sans-serif;
  
   font-style: italic;
-  font-weight: 500;
+  font-weight: 800;
   font-size: 60px;
   line-height: 126px;
-letter-spacing: 0.1rem;
+letter-spacing: 0.025rem;
   color: #ffffff;
   @media (max-width:450px) {
     font-size: 30px;

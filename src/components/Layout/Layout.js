@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import MainHeader from './MainHeader';
-
+import './Layout.css'
 const Layout = (props) => {
   return (
     <Fragment>

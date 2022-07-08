@@ -34,10 +34,9 @@ padding: 0px 100px;
   }
 `
 const H1 = styled.div`
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-font-family: 'Anton', sans-serif;
+
   font-style: italic;
-  font-weight: 500;
+  font-weight: 800;
   font-size: 50px;
   line-height: 126px;
   word-spacing: 6px;
